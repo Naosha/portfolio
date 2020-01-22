@@ -57,6 +57,11 @@ html, body {
   font-family: 'Alata', sans-serif;
   color: rgb(88, 88, 88);
   height: 100%;
+  overflow-x: hidden;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  position: relative;
 }
 
 .page-wrapper{
