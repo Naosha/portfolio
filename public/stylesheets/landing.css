@@ -17,18 +17,26 @@ body {
   background-color: lightgrey;
   cursor: pointer;
   height: 100%;
-  width: 100;
+  width: 100%;
+  position: relative;
+  text-align: center;
   position: relative;
 }
 
   
 #landing-text {
-  text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
-  padding-top: 250px;
+  display: inline-block;
+  vertical-align: middle;
   font-family: 'Alata', sans-serif;
   text-shadow: 2px 2px 3px slategray;
   cursor: pointer;
+  min-width: 100%;
 }
 
 #landing-text h1 {

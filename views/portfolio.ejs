@@ -6,10 +6,10 @@
 <div class="info">
     <h5 class="heading">What I've been doing</h5>
     <p class="mb-5">Take a look at some of my work.</p>
-    <i class="fas fa-arrow-circle-down fa-7x orange"></i>
+    <div class="first"><i onclick="smoothScroll(document.getElementById('second'))"class="fas fa-arrow-circle-down fa-7x orange"></i></div>
 </div>
 
-<div class="row yelp"> 
+<div class="row yelp second" id="second"> 
     <div class="col-2 col-md-3">
     </div>
     <div class="col-8 col-md-6">
@@ -17,12 +17,12 @@
             <img class="photo" src="/images/yelp.png" alt="Yelpcamp landing page image">
         </a>
         <h3 class="center mt-5 py-2">Yelpcamp</h3>
-        <p class="center my-3">This site includes features such as user authentication, add/edit campgrounds, comments and google maps location. </p>
+        <p class="center my-3">This site includes features such as user authentication, add/edit campgrounds, comments and Google&trade; maps location. </p>
         <p class="center mt-2">Project Type: Dynamic</p>
         <p class="center mb-2">Technology: HTML5 CSS3 Nodejs Bootstrap MongoDB</p>
         <div class="center eg-btn">
-            <a href="https://github.com/Naosha/yelp" class="btn btn-secondary mr-2"><i class="fab fa-github"></i> Source Code</a>
-            <a href="https://limitless-plateau-48248.herokuapp.com/" class="btn btn-secondary"><i class="fas fa-link"></i> Visit Site</a>
+            <a href="https://github.com/Naosha/yelpcamp" class="btn btn-secondary mr-2 mb-2"><i class="fab fa-github"></i> Source Code</a>
+            <a href="https://limitless-plateau-48248.herokuapp.com/" class="btn btn-secondary mb-2"><i class="fas fa-link"></i> Visit Site</a>
         </div>
     </div>
     <div class="col-2 col-md-3">
@@ -40,8 +40,8 @@
         <p class="center mt-2">Project Type: Static</p>
         <p class="center mb-2">Technology: HTML5 CSS3 Nodejs Bootstrap</p>
         <div class="center eg-btn">
-            <a href="https://github.com/Naosha/Colour-Game" class="btn btn-secondary mr-2"><i class="fab fa-github"></i> Source Code</a>
-            <a href="https://mysterious-mesa-15632.herokuapp.com/" class="btn btn-secondary"><i class="fas fa-link"></i> Visit Site</a>
+            <a href="https://github.com/Naosha/Colour-Game" class="btn btn-secondary mr-2 mb-2"><i class="fab fa-github"></i> Source Code</a>
+            <a href="https://mysterious-mesa-15632.herokuapp.com/" class="btn btn-secondary mb-2"><i class="fas fa-link"></i> Visit Site</a>
         </div>
     </div>
     <div class="col-2 col-md-3">
@@ -59,8 +59,8 @@
         <p class="center mt-2">Project Type: Dynamic</p>
         <p class="center mb-2">Technology: HTML5 CSS3 Nodejs Semantic UI MongoDB</p>
         <div class="center eg-btn">
-            <a href="https://github.com/Naosha/" class="btn btn-secondary mr-2"><i class="fab fa-github"></i> Source Code</a>
-            <a href="https://vast-ocean-61510.herokuapp.com/blogs" class="btn btn-secondary"><i class="fas fa-link"></i> Visit Site</a>
+            <a href="https://github.com/Naosha/" class="btn btn-secondary mr-2 mb-2"><i class="fab fa-github"></i> Source Code</a>
+            <a href="https://vast-ocean-61510.herokuapp.com/blogs" class="btn btn-secondary mb-2"><i class="fas fa-link"></i> Visit Site</a>
         </div>
     </div>
     <div class="col-2 col-md-3">
@@ -76,7 +76,7 @@
         <p class="center mt-2">Project Type: Static</p>
         <p class="center mb-2">Technology: HTML5 CSS3 Nodejs Bootstrap</p>
         <div class="center eg-btn">
-            <a href="https://github.com/Naosha/" class="btn btn-secondary mr-2"><i class="fab fa-github"></i> Source Code</a>
+            <a href="https://github.com/Naosha/" class="btn btn-secondary mr-2 mb-2"><i class="fab fa-github"></i> Source Code</a>
         </div>
     </div>
     <div class="col-2 col-md-3">
@@ -92,11 +92,37 @@
         <p class="center mt-2">Project Type: Static</p>
         <p class="center mb-2">Technology: HTML5 CSS3 Nodejs Bootstrap</p>
         <div class="center eg-btn">
-            <a href="https://github.com/Naosha/" class="btn btn-secondary mr-2"><i class="fab fa-github"></i> Source Code</a>
+            <a href="https://github.com/Naosha/" class="btn btn-secondary mr-2 mb-2"><i class="fab fa-github"></i> Source Code</a>
         </div>
     </div>
     <div class="col-2 col-md-3">
     </div>
 </div>
+
+<script>
+    window.smoothScroll = function(target) {
+    var scrollContainer = target;
+    do { //find scroll container
+        scrollContainer = scrollContainer.parentNode;
+        if (!scrollContainer) return;
+        scrollContainer.scrollTop += 1;
+    } while (scrollContainer.scrollTop == 0);
+
+    var targetY = 0;
+    do { //find the top of target relatively to the container
+        if (target == scrollContainer) break;
+        targetY += target.offsetTop;
+    } while (target = target.offsetParent);
+
+    scroll = function(c, a, b, i) {
+        i++; if (i > 30) return;
+        c.scrollTop = a + (b - a) / 30 * i;
+        setTimeout(function(){ scroll(c, a, b, i); }, 20);
+    }
+    // start scrolling
+    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+}
+
+</script>
 
 <%- include("partials/footer") %>
