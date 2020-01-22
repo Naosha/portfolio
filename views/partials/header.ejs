@@ -5,11 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Charm&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Domine&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Alata&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/02c1331262.js" crossorigin="anonymous"></script>
-
-
         <link rel="stylesheet" href="/stylesheets/main.css">
 
         <title>Portfolio</title>
@@ -23,11 +20,8 @@
           
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mx-auto">
-                <li class="<%= typeof page !== 'undefined' && page === 'home' ? 'active' : '' %>">
-                  <a class="nav-link" id="home" href="/home">Home <span class="sr-only">(current)</span></a>
-                </li>
                 <li class="<%= typeof page !== 'undefined' && page === 'about' ? 'active' : '' %>">
-                  <a class="nav-link" id="about" href="/about">About</a>
+                  <a class="nav-link" id="about" href="/about">About <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="<%= typeof page !== 'undefined' && page === 'portfolio' ? 'active' : '' %>">
                     <a class="nav-link" id="portfolio" href="/portfolio">Portfolio</a>

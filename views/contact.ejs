@@ -1,7 +1,46 @@
 <%- include("partials/header") %>
 
-<div class="container">
-  <h1>Contact</h1>
+<div class="jumbo">
+  <h1>Ways to get in touch</h1>
+</div>
+
+<div class="row" id="link-btns">
+  <div class="col">
+    <a href="/contact" class="btn btn-circle-lg m-4"><i class="fas fa-envelope-square"></i></a>
+    <p>Send me an email</p>
+  </div>
+  <div class="col">
+    <a href="https://www.linkedin.com/in/naomi-sharp-ab78b819b/" class="btn btn-circle-lg m-4"><i class="fab fa-linkedin-in"></i></a>
+    <p>Connect on LinkedIn</p>
+  </div>
+  <div class="col">
+    <a href="https://github.com/Naosha" class="btn btn-circle-lg m-4"><i class="fab fa-github"></i></a>
+    <p>Collaborate on github</p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-2 col-md-3"></div>
+  <div class="col-8 col-md-6">
+    <div class="msg-cont">
+      <form action="">
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="">
+        </div>
+        <div>
+          <label class="pt-3" for="email">Email</label>
+          <input type="text" id="email" name="email" placeholder="">
+        </div>
+        <div>
+          <label class="pt-3" for="message">Message</label>
+          <textarea id="subject" name="message" placeholder="" style="height:200px"></textarea>
+        </div>
+        <input class="msg-btn" type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+  <div class="col-2 col-md-3"></div>
 </div>
 
 <%- include("partials/footer") %>

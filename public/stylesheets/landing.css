@@ -5,36 +5,20 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-color: lightgrey;
-  /* background: #1A2980;  
-  background: -webkit-linear-gradient(to right, #26D0CE, #1A2980); 
-  background: linear-gradient(to right, #26D0CE, #1A2980);  */
+  
 }
 
   
 #landing-text {
   text-align: center;
   color: white;
-  padding-top: 14em;
-  font-family: 'Charm', cursive;
-  text-shadow: 2px 2px 3px rgb(0, 100, 50);
+  padding-top: 250px;
+  font-family: 'Alata', sans-serif;
+  text-shadow: 2px 2px 3px slategray;
 }
 
 #landing-text h1 {
   font-weight: 500;
+  font-size: 50px;
 }
 
-/* #link-btns {
-  text-align: center;
-  padding-top: 2em;
-}
-
-.btn-circle-lg {
-  width: 55px;
-  height: 55px;
-  line-height: 55px;
-  font-size: 1.4rem;
-  text-align: center;
-  padding: 0;
-  border-radius: 50%;
-  background-color: #1A2980;
-} */

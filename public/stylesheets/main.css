@@ -1,6 +1,60 @@
+.jumbo {
+  background-color: slategray;
+}
+
+.info {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  text-align: center;
+}
+.orange {
+  color:rgb(252, 159, 53);
+}
+
+.eg-btn {
+  padding-top: 30px;
+}
+
+.yelp {
+  padding: 80px 25px 60px 25px;
+  background-color: rgb(141, 207, 103);
+  color: white;
+}
+
+.rgb {
+  padding: 80px 25px 60px 25px;
+  background-color: rgb(140, 164, 190);
+  color: white;
+}
+
+.blog {
+  padding: 80px 25px 60px 25px;
+  background-color: rgb(248, 222, 71);
+  color: white;
+}
+
+.candy {
+  padding: 80px 25px 60px 25px;
+  background-color: rgb(131, 176, 184);
+  color: white;
+}
+
+.gallery {
+  padding: 80px 25px 60px 25px;
+  background-color: rgb(252, 159, 53);
+  color: white;
+}
+
+.heading {
+  color: rgb(141, 207, 103);
+  font-size: 30px;
+}
+
+
+
 html, body {
   background-color: white;
-  font-family: 'Domine', serif;
+  font-family: 'Alata', sans-serif;
   color: rgb(88, 88, 88);
   height: 100%;
 }
@@ -11,22 +65,11 @@ html, body {
 }
 
 .navbar {
-  background: rgb(0, 100, 50);
-}
-
-.nav-item a {
-  color: rgba(255, 255, 255, 0.5)!important;
-}
-
-.nav-item a:hover,
-.nav-item a:focus,
-.nav-item.active > a
-{
-  color: white!important;
+  background: rgb(88, 88, 88);
 }
 
 .footer {
-  background: rgb(0, 100, 50);
+  background: rgb(88, 88, 88);
   color: white;
   height: 50px;
   width: 100%;
@@ -58,28 +101,77 @@ html, body {
 .photo {
   max-width: 100%;
   box-shadow: 
-    0.1em 0.1em 0.3em rgb(100, 100, 100), 
-    0em 0em 0.3em rgb(100, 100, 100);
+    0.1em 0.1em 0.5em rgb(100, 100, 100), 
+    0.1em 0.1em 0.5em rgb(100, 100, 100);
 }
 
 h1 {
   text-align: center;
   padding-top: 2em;
   padding-bottom: 2em;
-  color:rgb(0, 100, 50);
-  font-family: 'Domine', serif;
-  border-bottom: 2px solid rgb(0, 100, 50);
+  color: white;
 }
 
-.site-heading {
-  border-bottom: 1px solid rgb(88, 88, 88);
+label {
+  display: block;
+  color: white;
 }
 
-.example {
-  border-bottom: 2px solid rgb(0, 100, 50);
-  padding-bottom: 4em;
-  padding-top: 4em;
+input {
+  width: 100%;
+  border-radius: 4px;
+  padding: 5px 12px 5px 12px;
 }
+
+textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+.msg-btn{
+  background-color: slategray;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.msg-btn:hover {
+  background-color: #45a049;
+}
+
+.msg-cont {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color:rgb(141, 207, 103);
+  padding: 20px;
+}
+
+#link-btns {
+  text-align: center;
+  padding: 100px 0px 100px 0px;
+  margin: 0px 100px 0px 100px;
+}
+
+.btn-circle-lg {
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 0;
+  border-radius: 50%;
+  background-color: rgb(252, 159, 53);
+  color: white;
+}
+
+
+
+
 
 
 
