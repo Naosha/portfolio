@@ -1,3 +1,11 @@
+html{
+  cursor: pointer;
+  height: 100%
+}
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   background-image: url(/images/laptop.jpg);
   background-position: center center;
@@ -5,7 +13,9 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-color: lightgrey;
-  
+  cursor: pointer;
+  height: 100%;
+  position: relative;
 }
 
   
@@ -15,10 +25,12 @@ body {
   padding-top: 250px;
   font-family: 'Alata', sans-serif;
   text-shadow: 2px 2px 3px slategray;
+  cursor: pointer;
 }
 
 #landing-text h1 {
   font-weight: 500;
   font-size: 50px;
+  cursor: pointer;
 }
 
