@@ -4,9 +4,6 @@ html{
   width: 100%;
 
 }
-html, body {
-  overflow-x: hidden;
-}
 
 body {
   background-image: url(/images/laptop.jpg);
@@ -15,10 +12,8 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-color: lightgrey;
-  cursor: pointer;
   height: 100%;
   width: 100%;
-  position: relative;
   text-align: center;
   position: relative;
 }
@@ -27,7 +22,7 @@ body {
 #landing-text {
   margin: 0;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -45,3 +40,15 @@ body {
   cursor: pointer;
 }
 
+.zoom {
+  padding: 50px;
+  background-color: transparent;
+  transition: transform .2s; /* Animation */
+  width: 400px;
+  height: 150px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.2);
+}

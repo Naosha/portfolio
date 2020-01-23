@@ -6,7 +6,7 @@
 <div class="info">
     <h5 class="heading">What I've been doing</h5>
     <p class="mb-5">Take a look at some of my work.</p>
-    <div class="first"><i onclick="smoothScroll(document.getElementById('second'))"class="fas fa-arrow-circle-down fa-7x orange"></i></div>
+    <div class="first"><i onclick="smoothScroll(document.getElementById('second'))"class="fas fa-arrow-circle-down fa-7x orange zoom mt-4"></i></div>
 </div>
 
 <div class="row yelp second" id="second"> 
@@ -14,7 +14,7 @@
     </div>
     <div class="col-8 col-md-6">
         <a href="https://limitless-plateau-48248.herokuapp.com/">
-            <img class="photo" src="/images/yelp.png" alt="Yelpcamp landing page image">
+            <img class="photo zoom" src="/images/yelp.png" alt="Yelpcamp landing page image">
         </a>
         <h3 class="center mt-5 py-2">Yelpcamp</h3>
         <p class="center my-3">This site includes features such as user authentication, add/ edit campgrounds, comments and Google maps&trade; location. </p>
@@ -33,7 +33,7 @@
     </div>
     <div class="col-8 col-md-6">
         <a href="https://mysterious-mesa-15632.herokuapp.com/">
-            <img class="photo" src="/images/rgb.png" alt="Colour Game page image">
+            <img class="photo zoom" src="/images/rgb.png" alt="Colour Game page image">
         </a>
         <h3 class="center mt-5 py-2">Colours Game</h3>
         <p class="center my-3">Guess the RGB colour game! As much fun to play as it was to make! Go on have a go.</p>
@@ -52,7 +52,7 @@
     </div>
     <div class="col-8 col-md-6">
         <a href="https://vast-ocean-61510.herokuapp.com/blogs">
-            <img class="photo" src="/images/blog.png" alt="Blog page image">
+            <img class="photo zoom" src="/images/blog.png" alt="Blog page image">
         </a>
         <h3 class="center mt-5 py-2">Blog App</h3>
         <p class="center my-3">An exercise in RESTful routing.</p>
@@ -117,7 +117,7 @@
     scroll = function(c, a, b, i) {
         i++; if (i > 30) return;
         c.scrollTop = a + (b - a) / 30 * i;
-        setTimeout(function(){ scroll(c, a, b, i); }, 20);
+        setTimeout(function(){ scroll(c, a, b, i); }, 14);
     }
     // start scrolling
     scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
