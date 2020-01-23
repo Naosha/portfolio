@@ -3,8 +3,8 @@
 }
 
 .info {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   text-align: center;
 }
 .orange {
@@ -50,6 +50,11 @@
   font-size: 30px;
 }
 
+.white-heading {
+  color: slategray;
+  font-size: 30px;
+}
+
 
 
 html, body {
@@ -82,13 +87,17 @@ html, body {
   bottom: 0px;
   left: 0px;
   padding-top: 20px;
-  margin-top: 30px;
 }
 
 .tech {
   margin-top: 20px;
   display: flex;
   align-items: center;
+}
+
+.tech-cont {
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .center {
@@ -157,8 +166,7 @@ textarea {
 
 #link-btns {
   text-align: center;
-  padding: 100px 0px 100px 0px;
-  margin: 0px 100px 0px 100px;
+  padding: 50px 100px 50px 100px;
 }
 
 .btn-circle-lg {
@@ -173,8 +181,22 @@ textarea {
   color: white;
 }
 
-#about-bg {
-  background-color: whitesmoke;
+.about-bg {
+  background-color: white;
+  padding-top:90px;
+}
+
+.about-pad {
+  padding-bottom: 100px;
+}
+
+.form {
+  margin-top: 100px;
+}
+
+.bg-block {
+  padding-top: 100px;
+  background-color: rgb(141, 207, 103);
 }
 
 
