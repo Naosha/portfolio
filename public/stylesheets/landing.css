@@ -40,15 +40,16 @@ body {
   cursor: pointer;
 }
 
-.zoom {
-  padding: 50px;
-  background-color: transparent;
-  transition: transform .2s; /* Animation */
-  width: 400px;
-  height: 150px;
-  margin: 0 auto;
+body {
+
+  opacity: 0;
+  -webkit-transition: opacity 2s;
+     -moz-transition: opacity 2s; 
+      -ms-transition: opacity 2s;
+       -o-transition: opacity 2s; 
+          transition: opacity 2s;
 }
 
-.zoom:hover {
-  transform: scale(1.2);
-}
+
+
+
